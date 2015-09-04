@@ -1,0 +1,37 @@
+{
+  "name": "glint-block-markdown",
+  "version": "1.0.0",
+  "description": "Editable Text Block",
+  "main": "server.js",
+  "browser": "browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glintcms/glint-block-markdown"
+  },
+  "keywords": [
+    "editable",
+    "contenteditable",
+    "inline",
+    "editable",
+    "text",
+    "glint",
+    "block",
+    "markdown"
+  ],
+  "author": "Andi Neck",
+  "License": "MIT",
+  "bugs": {
+    "url": "https://github.com/glintcms/glint-block-markdown/issues"
+  },
+  "homepage": "https://github.com/glintcms/glint-block-markdown",
+  "dependencies": {
+    "brify": "^1.0.0",
+    "inner-text-shim": "^1.0.0",
+    "marked": "^0.3.3",
+    "utils-merge": "^1.0.0"
+  },
+  "license": "MIT"
+}
