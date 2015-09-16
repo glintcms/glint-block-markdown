@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-var debug = require('debug')('glint:markdown');
+var debug = require('debug')('glint-block-markdown');
 var merge = require('utils-merge');
 var marked = require('marked');
 
