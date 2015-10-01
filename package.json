@@ -1,6 +1,6 @@
 {
   "name": "glint-block-markdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Editable Text Block",
   "main": "server.js",
   "browser": "browser.js",
