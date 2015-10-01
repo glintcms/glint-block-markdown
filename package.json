@@ -30,6 +30,7 @@
   "dependencies": {
     "brify": "^1.0.0",
     "debug": "^2.2.0",
+    "inner-text": "^1.0.1",
     "inner-text-shim": "^1.0.0",
     "marked": "^0.3.3",
     "utils-merge": "^1.0.0"

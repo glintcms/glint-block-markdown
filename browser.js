@@ -3,7 +3,7 @@
  */
 var debug = require('debug')('glint-block-markdown');
 var merge = require('utils-merge');
-var innerText = require('inner-text-shim');
+var innerText = require('inner-text');
 var brify = require('brify');
 var marked = require('marked');
 
