@@ -54,8 +54,6 @@ MDBlock.prototype.edit = function () {
 MDBlock.prototype.save = function () {
   this.content = this.getContent();
   this.el.removeAttribute('contenteditable');
-  this.render();
-  this.el.style.whiteSpace = '';
   return this.content;
 };
 
