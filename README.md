@@ -1,7 +1,7 @@
 # glint-block-markdown
 
 
-Editable Text Block
+Editable Markdown Block
 
 
 # install

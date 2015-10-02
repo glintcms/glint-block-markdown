@@ -4,6 +4,7 @@
 var debug = require('debug')('glint-block-markdown');
 var merge = require('utils-merge');
 var innerText = require('inner-text');
+var decode = require('decode-html');
 var brify = require('brify');
 var marked = require('marked');
 
@@ -28,7 +29,7 @@ function MDBlock(options) {
  */
 MDBlock.prototype.api = MDBlock.api = 'block-provider';
 
-MDBlock.prototype.load = function (content) {
+MDBlock.prototype.load = function(content) {
   this.el.removeAttribute('contenteditable');
   this.el.style.whiteSpace = '';
   if (!content) return;
@@ -38,7 +39,7 @@ MDBlock.prototype.load = function (content) {
   return this.content;
 };
 
-MDBlock.prototype.edit = function () {
+MDBlock.prototype.edit = function() {
   this.el.setAttribute('contenteditable', true);
   this.el.style.whiteSpace = 'pre-wrap';
 
@@ -51,7 +52,7 @@ MDBlock.prototype.edit = function () {
   return this.content;
 };
 
-MDBlock.prototype.save = function () {
+MDBlock.prototype.save = function() {
   this.content = this.getContent();
   this.el.removeAttribute('contenteditable');
   return this.content;
@@ -61,10 +62,11 @@ MDBlock.prototype.save = function () {
  * Base functions.
  */
 
-MDBlock.prototype.getContent = function () {
-  return innerText(this.el);
+MDBlock.prototype.getContent = function() {
+  var text = innerText(this.el);
+  return decode(text);
 };
 
-MDBlock.prototype.render = function () {
+MDBlock.prototype.render = function() {
   this.el.innerHTML = marked(this.content);
 };
