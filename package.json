@@ -32,7 +32,6 @@
     "debug": "^2.2.0",
     "decode-html": "^1.0.2",
     "inner-text": "^1.0.2",
-    "inner-text-shim": "^1.0.0",
     "marked": "^0.3.3",
     "utils-merge": "^1.0.0"
   },
